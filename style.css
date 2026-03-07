@@ -1270,3 +1270,16 @@
         grid-template-columns: 1fr
       }
     }
+
+    /* FOOTER */
+.app-footer{background:var(--bg2);border-top:1px solid var(--border);padding:16px 24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.footer-left{font-size:12px;color:var(--text2)}
+.footer-left span{color:var(--accent);font-weight:700}
+.footer-left .heart{color:var(--red);font-size:14px}
+.footer-right{display:flex;gap:16px;align-items:center}
+.footer-link{font-size:11px;color:var(--text2);text-decoration:none;transition:color .2s;cursor:pointer}
+.footer-link:hover{color:var(--accent)}
+.footer-divider{width:1px;height:12px;background:var(--border)}
+@media(max-width:480px){
+  .app-footer{justify-content:center;text-align:center;flex-direction:column}
+}
